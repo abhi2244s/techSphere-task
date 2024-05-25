@@ -1,0 +1,74 @@
+.favorite {
+    display: flex;
+    width: 90%;
+    margin: auto;
+
+    .sidebarContainerFav {
+        width: 20%;
+    }
+
+    .grid-music {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 70%;
+
+        .favoriteMusic {
+
+            width: 300px;
+
+            .selectedSongNameContainer {
+                .selected-song-para1 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: rgb(139, 135, 130);
+                }
+
+                .selected-song-para2 {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: rgb(94, 88, 80);
+                }
+            }
+
+            .remove-favorite-button {
+                padding: 12px 8px 12px 8px;
+                border-radius: 8px;
+                cursor: pointer;
+                background-color: rgb(139, 135, 130);
+                border: 1px solid rgb(139, 135, 130);
+                color: white;
+                margin-top: 10px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .favorite {
+        display: flex;
+        flex-direction: column;
+
+
+
+        .sidebarContainerFav {
+            // display: none;
+            width: 100%;
+            height: 300px;
+        }
+
+        .border-container {
+            display: block;
+            width: 100%;
+        }
+
+        .grid-music {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    }
+}
